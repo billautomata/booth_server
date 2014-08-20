@@ -15,6 +15,7 @@
     "kue": "~0.8.5",
     "express-handlebars": "~1.0.1",
     "underscore": "~1.6.0",
-    "request": "~2.40.0"
+    "request": "~2.40.0",
+    "jstest": "~1.0.5"
   }
 }
