@@ -1,6 +1,6 @@
 {
   "name": "NECK_template",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "a boilerplate for a full stack",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,19 @@
   "license": "MIT",
   "dependencies": {
     "express": "~4.8.5",
-    "nano": "~5.10.0",
     "body-parser": "~1.6.5",
-    "kue": "~0.8.5",
     "express-handlebars": "~1.0.1",
     "underscore": "~1.6.0",
     "request": "~2.40.0",
-    "jstest": "~1.0.5"
-  }
+    "jstest": "~1.0.5",
+    "socket.io": "~1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/billautomata/NECK_template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/billautomata/NECK_template/issues"
+  },
+  "homepage": "https://github.com/billautomata/NECK_template"
 }
