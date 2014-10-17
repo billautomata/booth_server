@@ -1,4 +1,4 @@
-var socket = io.connect('http://192.168.1.122:8000');
+var socket = io.connect(window.location.host);
 socket.on('intro', function (data) {
   console.log(data);
   socket.emit('do', { my: 'data' });
