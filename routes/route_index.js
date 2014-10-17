@@ -12,6 +12,9 @@ module.exports = function(app){
   app.get('/test', test_route.home)
   app.get('/about', main_route.about)
 
+  app.get('/server', main_route.server)
+  app.get('/client', main_route.client)
+  
   // home
   app.get('/', main_route.home)
 

@@ -1,5 +1,21 @@
-var socket = io.connect('http://localhost:8000');
+var socket = io.connect('http://192.168.1.122:8000');
 socket.on('intro', function (data) {
   console.log(data);
-  socket.emit('my other event', { my: 'data' });
+  socket.emit('do', { my: 'data' });
 });
+
+
+window.addEventListener("deviceorientation", handleOrientation, true);
+
+function handleOrientation(event) {
+  var absolute = event.absolute;
+  var alpha    = event.alpha;
+  var beta     = event.beta;
+  var gamma    = event.gamma;
+
+  if(socket){
+    socket.emit('do', {values:[ event.absolute, event.alpha, event.beta, event.gamma ]})
+  }
+
+  // Do stuff with the new orientation data
+}
